@@ -888,7 +888,7 @@ body.modal-open {
 .tools__content {
   padding: 130px 0 40px;
 }
-.tools__title {
+.tools__title-2 {
   color: #000;
   font-size: 36px;
   line-height: 60px;
@@ -905,14 +905,14 @@ body.modal-open {
     background-color: #6d7278;
   }
 }
-.tools__text {
+.tools__text-2 {
   margin: 0 auto;
 }
-.tools__text p {
+.tools__text-2 p {
   margin-bottom: 30px;
   color: #000;
 }
-.tools {
+.tools-2 {
   background-image: url(/images-tools/photo.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
