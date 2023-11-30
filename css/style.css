@@ -1,3 +1,6 @@
+@import "/css/styleGallery.css";
+@import "/css/styleTools.css";
+
 html {
   box-sizing: border-box;
 }
