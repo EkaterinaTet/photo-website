@@ -41,6 +41,9 @@ body {
 }
 .header {
   background-color: #181818;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
 }
 .nav {
   display: flex;
@@ -67,15 +70,16 @@ body {
 }
 
 .menu__btn {
+  padding: 10px;
   background-color: #fff;
   color: #000;
   border-radius: 14px;
   height: 42px;
-  width: 155px;
+  width: 145px;
   font-size: 18px;
   cursor: pointer;
 }
-.menu__btn:hover{
+.menu__btn:hover {
   background-color: #666666ab;
   color: #fff;
   transition: all 0.6s ease 0s;
@@ -397,29 +401,23 @@ body {
 }
 .footer__form-input {
   border-radius: 12px;
+  padding-left: 20px;
+  padding-right: 10px;
   width: 458px;
   height: 52px;
 }
 .footer__btn {
-  /* background-color: #c0c0c0;
-  color: #000;
-  margin-top: 15px;
-  border-radius: 30px;
-  padding: 5px 15px 5px 15px;
-  font-family: "Poppins"; */
   font-size: 15px;
   border-radius: 20px;
   background-color: #fff;
   color: #000;
   margin-top: 10px;
-padding: 5px 20px 5px 20px;
+  padding: 5px 20px 5px 20px;
   cursor: pointer;
 }
 .footer__btn:hover {
-  background-color: #c0c0c0;
-  color: #fff;
-  font-size: 18px;
-    transition: all 0.6s ease 0s;
+  background-color: #a0a0a0;
+  transition: all 0.6s ease 0s;
 }
 .footer__bottom {
   padding-top: 56px;
@@ -442,11 +440,11 @@ padding: 5px 20px 5px 20px;
 .footer__social-icon {
   padding-left: 20px;
 }
-.menu__link:hover{
+.menu__link:hover {
   border-bottom: 1px solid #fff;
 }
-.product__link:hover{
-    background-color: #666666ab;
+.product__link:hover {
+  background-color: #666666ab;
   color: #fff;
   transition: all 0.3s ease 0s;
 }
@@ -464,12 +462,13 @@ padding: 5px 20px 5px 20px;
   .footer__form {
     margin-left: -200px;
   }
-  .subtitle{
+  .subtitle {
     padding-top: 270px;
-}
-  .top{
+  }
+  .top {
     min-height: calc(100vh - 579px);
   }
+}
 @media (max-width: 950px) {
   .menu-btn {
     display: flex;
@@ -492,6 +491,7 @@ padding: 5px 20px 5px 20px;
     display: inline-block;
     padding: 10px 0;
   }
+
   .menu.menu--active {
     transform: translateX(0%);
   }
@@ -527,17 +527,17 @@ padding: 5px 20px 5px 20px;
   .footer__btn {
     font-size: 20px;
   }
-    .subtitle{
+  .subtitle {
     padding-top: 265px;
-}
-  .top{
+  }
+  .top {
     min-height: calc(100vh - 585px);
   }
 }
 @media (max-width: 685px) {
   .menu__btn {
     height: 32px;
-    width: 120px;
+    width: 155px;
     font-size: 18px;
   }
   .title {
@@ -622,10 +622,10 @@ padding: 5px 20px 5px 20px;
   .top__text {
     margin-bottom: 75px;
   }
-    .subtitle{
+  .subtitle {
     padding-top: 175px;
-}
-  .top{
+  }
+  .top {
     min-height: calc(100vh - 720px);
   }
 }
@@ -726,8 +726,13 @@ padding: 5px 20px 5px 20px;
   .footer__social {
     margin-left: 100px;
   }
-  .tools__item{
-    padding-left: 0px;
+  .tools__item {
+    padding-left: 0;
+  }
+  .popup.active {
+    width: 250px;
+    padding: 10px;
+  }
 }
 @media (max-width: 355px) {
   .title {
@@ -747,13 +752,134 @@ padding: 5px 20px 5px 20px;
   .section__subtitle {
     font-size: 17px;
   }
+  .section__title {
+    padding-top: 40px;
+  }
   .characteristics {
     margin-right: 15px;
   }
-    .subtitle{
-    padding-top: 105px;
 }
-  .section__title{
-    padding-top: 40px;
+/* display: inherit;
+          width: 154px;
+          margin-left: auto;
+          margin-right: auto; */
+
+/*popup*/
+
+body.modal-open {
+  overflow-y: hidden;
 }
 
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0; /*Скрываю фон и сам попап*/
+  pointer-events: none; /*Запрещаю ему быть целью событий (указатель с клавиатуры)*/
+  transition: 0.9s all;
+}
+.popup__bg.active {
+  /* При добавлении класса 'active'*/
+  opacity: 1; /*Показываю фон и попап*/
+  pointer-events: all; /*Возвращаю события*/
+  transition: 0.5s all;
+  z-index: 50;
+}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); /*Центрирую и масштабирую в 0 само окно*/
+  background: #fff;
+  width: 400px;
+  padding: 25px;
+  transition: 0.9s all;
+}
+.popup.active {
+  /* При добавлении класса 'active'*/
+  transform: translate(-50%, -50%) scale(1); /* Так же центрирую и плавно увеличиваю*/
+  transition: 0.9s all;
+}
+/*код для стилизации формы */
+.close-popup {
+  position: absolute;
+  width: 40px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.popup label {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.popup .label__text {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cfd0d3;
+  margin-bottom: 5px;
+}
+.popup input {
+  height: 45px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #cfd0d3;
+}
+.popup input:focus {
+  border-bottom: 1px solid #090b0e;
+}
+.popup input:focus + .label__text {
+  color: #000000;
+}
+.popup button {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background: #1c1b1b;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.9s all;
+}
+.popup button:hover {
+  background: #fff;
+  color: #08090a;
+  transition: 0.9s all;
+}
+
+/*стрелка прокрутки наверх*/
+.btnUp {
+  position: fixed;
+  right: 20px;
+  top: 90%;
+  transform: translateY(-50%); /* выравниваем по центру */
+  cursor: pointer;
+  display: none; /* по умолчанию скрываю кнопку */
+  font-size: 20px;
+  color: #08090a;
+  border: 1px solid #cfd0d3;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 15px 10px;
+  z-index: 400;
+}
+.btnUp:hover {
+  color: #08090a;
+  background-color: #ffffff50;
+  transition: 0.5s all;
+}
+/* модификатор для отображения кнопки */
+.btnUp--show {
+  display: block;
+}
