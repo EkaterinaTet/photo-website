@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/styleGallery.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="/pages/index.html" class="logo">
+            <img src="/images/logo.svg" alt="logo" />
+          </a>
+          <a class="menu__btn open-popup">Get template</a>
+        </nav>
+      </div>
+      <!-- popup -->
+      <div class="popup__bg">
+        <form class="popup">
+          <img src="/images/close.svg" class="close-popup" />
+          <label>
+            <input type="text" name="name" />
+            <div class="label__text">Name</div>
+          </label>
+          <label>
+            <input type="tel" name="tel" />
+            <div class="label__text">Phone</div>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <!-- popup -->
+    </header>
+
+    <main>
+      <div class="gallery gallery-page">
+        <div class="container-fluid">
+          <div class="gallery__buttons">
+            <button class="gallery__btn" data-filter=".product">
+              Product Photography
+            </button>
+            <button class="gallery__btn" data-filter=".architecture">
+              Architecture Photography
+            </button>
+            <button class="gallery__btn" data-filter=".drone">
+              Drone Photography
+            </button>
+            <button class="gallery__btn" data-filter=".wildlife">
+              Wildlife Photography
+            </button>
+          </div>
+          <div class="gallery__inner">
+            <div class="gallery__items mix product">
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/product-2.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/product-1.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/product-3.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/product-4.jpg" alt="item" />
+              </a>
+
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/product-5.jpg" alt="item" />
+              </a>
+            </div>
+
+            <div class="gallery__items mix architecture">
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/architecture-1.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/architecture-2.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/architecture-3.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/architecture-4.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/architecture-5.jpg" alt="item" />
+              </a>
+            </div>
+
+            <div class="gallery__items mix drone">
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/drone-1.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/drone-2.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/drone-3.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/drone-4.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/architecture-5.jpg" alt="item" />
+              </a>
+            </div>
+
+            <div class="gallery__items mix wildlife">
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/wildlife-1.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/wildlife-2.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/wildlife-3.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/wildlife-4.jpg" alt="item" />
+              </a>
+              <a class="gallery__item" href="#">
+                <img src="/images-gallery/wildlife-5.jpg" alt="item" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__left">
+            <a href="#" class="logo">
+              <img src="/images/logo.svg" alt="logo" />
+            </a>
+            <p class="footer__info">
+              Photographers & videographers capturing the world around us.
+            </p>
+          </div>
+
+          <nav class="footer__menu footer__menu-left">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <p class="footer__menu-title">Business areas</p>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Product Photography</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link"
+                  >Architecture Photography</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Drone Photography</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Wildlife Photography</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer__menu footer__menu-right">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <p class="footer__menu-title">Pages</p>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Gear cage</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Featured images</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Contact</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Style guide</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Instructions</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Changelog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="subscription">
+          <div class="subscription__info">
+            <div class="subscription__title">Subscribe to our newsletter</div>
+            <p class="subscription__subtitle">
+              Read about all the things we do.
+            </p>
+          </div>
+          <form class="footer__form">
+            <input
+              class="footer__form-input"
+              id="mail"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button class="footer__btn" type="submit">Send</button>
+          </form>
+        </div>
+
+        <div id="section-contact" class="footer__bottom">
+          <div class="footer__bottom-author">
+            <p class="footer__info">
+              © Aperture Photography, Inc. All rights reserved.
+            </p>
+            <a href="#" class="footer__licensing">Licensing</a>
+          </div>
+
+          <ul class="footer__social">
+            <li class="footer__social-icon">
+              <a href="#" class="footer__social-link"
+                ><img src="/images/twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li class="footer__social-icon">
+              <a href="#" class="footer__social-link"
+                ><img src="/images/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li class="footer__social-icon">
+              <a href="#" class="footer__social-link"
+                ><img src="/images/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="btnUp">▲</div>
+    <script src="/js/popup.js"></script>
+    <script src="/js/mixitup.min.js"></script>
+    <script src="/js/gallery.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
