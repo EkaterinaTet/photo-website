@@ -913,7 +913,7 @@ body.modal-open {
   color: #000;
 }
 .tools-2 {
-  background-image: url(/images-tools/photo.jpeg);
+  background-image: url(../images-tools/photo.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 600px;
