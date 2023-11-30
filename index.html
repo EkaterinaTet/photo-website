@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <!--меню бургер-->
+          <button class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <!--меню бургер-->
+          <a href="#" class="logo">
+            <img src="/images/logo.svg" alt="logo" />
+          </a>
+          <ul class="menu">
+            <li class="menu__list">
+              <a href="#section-img" class="menu__link">Featured images</a>
+            </li>
+            <li class="menu__list">
+              <a href="#section-gear-cage" class="menu__link">Gear cage</a>
+            </li>
+            <li class="menu__list">
+              <a href="#section-clients" class="menu__link">Clients</a>
+            </li>
+            <li class="menu__list">
+              <a href="#section-contact" class="menu__link">Contact</a>
+            </li>
+          </ul>
+          <a class="menu__btn open-popup">Get template</a>
+        </nav>
+      </div>
+      <!-- popup -->
+      <div class="popup__bg">
+        <form class="popup">
+          <img src="/images/close.svg" class="close-popup" />
+          <label>
+            <input type="text" name="name" />
+            <div class="label__text">Name</div>
+          </label>
+          <label>
+            <input type="tel" name="tel" />
+            <div class="label__text">Phone</div>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <!-- popup -->
+    </header>
+    <main class="main">
+      <section class="top">
+        <h2 class="subtitle">Photographer & Filmmaker</h2>
+        <h1 class="title">Aperture Studios</h1>
+        <p class="top__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+          Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc
+          ut sem vitae risus tristique posuere.
+        </p>
+
+        <div class="characteristics">
+          <div class="characteristic__item">
+            <img
+              src="/images/item1.svg"
+              alt="item1"
+              class="characterisric__img"
+            />
+            <div class="characteristic__text">1/2000s</div>
+          </div>
+          <div class="characteristic__item">
+            <img
+              src="/images/item2.svg"
+              alt="item2"
+              class="characterisric__img"
+            />
+            <div class="characteristic__text">f/11</div>
+          </div>
+          <div class="characteristic__item">
+            <img
+              src="/images/item3.svg"
+              alt="item3"
+              class="characterisric__img"
+            />
+            <div class="characteristic__text">100</div>
+          </div>
+          <div class="characteristic__item">
+            <img
+              src="/images/item4.svg"
+              alt="item4"
+              class="characterisric__img"
+            />
+            <div class="characteristic__text">Iceland</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission" id="section-img">
+        <div class="container">
+          <h2 class="section__title">What we do.</h2>
+          <h3 class="section__subtitle">
+            The areas that we're specialized in.
+          </h3>
+          <div class="products">
+            <div class="product__item product__item-one">
+              <h4 class="product__title">Product Photography</h4>
+              <p class="product__text">
+                Cras commodo consequat orci, in convallis risus egestas non.
+                Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus
+                libero ac, cursus quam.
+              </p>
+              <a
+                href="/pages/gallery.html"
+                target="_blank"
+                class="product__link"
+              >
+                Read more
+              </a>
+            </div>
+            <div class="product__item product__item-two">
+              <h4 class="product__title">Architecture Photography</h4>
+              <p class="product__text">
+                Aenean porta neque eget consequat fringilla. Vestibulum
+                ultrices, orci nec egestas pharetra, ligula est semper enim, nec
+                auctor sapien leo nec purus.
+              </p>
+              <a
+                href="/pages/gallery.html"
+                target="_blank"
+                class="product__link"
+                >Read more</a
+              >
+            </div>
+            <div class="product__item product__item-three">
+              <h4 class="product__title">Drone Photography</h4>
+              <p class="product__text">
+                Mauris euismod elit et nisi ultrices, ut faucibus orci
+                tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo
+                consequat orci, in convallis risus egestas non. Nulla efficitur
+                auctor hendrerit. Etiam ut orci varius, faucibus libero ac,
+                cursus quam.
+              </p>
+              <a
+                href="/pages/gallery.html"
+                target="_blank"
+                class="product__link"
+                >Read more</a
+              >
+            </div>
+            <div class="product__item product__item-four">
+              <h4 class="product__title">Wildlife Photography</h4>
+              <p class="product__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros
+                quis consectetur. Morbi neque ex, condimentum dapibus congue et,
+                vulputate ut ligula. Vestibulum sit amet urna turpis.
+              </p>
+              <a
+                href="/pages/gallery.html"
+                target="_blank"
+                class="product__link"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mount">
+        <div class="element__info">
+          <h3 class="element__subtitle">Sunset at Mount Fuji</h3>
+          <p class="element__text">
+            Duis tristique sed lorem a vestibulum. Cras commodo consequat orci,
+            in convallis risus egestas non.
+          </p>
+        </div>
+        <ul class="character">
+          <li class="character__elem">
+            <img src="/images/item1.svg" alt="" class="character__img" />
+            <p class="character__name">1''</p>
+          </li>
+          <li class="character__elem">
+            <img src="/images/item2.svg" alt="" class="character__img" />
+            <p class="character__name">f/16</p>
+          </li>
+          <li class="character__elem">
+            <img src="/images/item3.svg" alt="" class="character__img" />
+            <p class="character__name">400</p>
+          </li>
+          <li class="character__elem">
+            <img src="/images/item4.svg" alt="" class="character__img" />
+            <p class="character__name">Japan</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="tools" id="section-gear-cage">
+        <div class="tools__item">
+          <h3 class="tools__subtitle">The Gear cage</h3>
+          <h2 class="tools__title">The tools that we use.</h2>
+          <p class="tools__text">
+            The say that "no place is boring if you've had a good night's sleep
+            and have a pocket full of unexposed film". While we don't shoot (a
+            lot) of film these days — these are the tools that we actually use
+            everyday to capture the amazing things around us.
+          </p>
+          <a href="/pages/tools.html" class="product__link product__link-tools"
+            >Check it out</a
+          >
+        </div>
+        <div class="photo">
+          <ul class="character character__photo">
+            <li class="character__elem">
+              <img src="/images/item1.svg" alt="" class="character__img" />
+              <p class="character__name">0,8''</p>
+            </li>
+            <li class="character__elem">
+              <img src="/images/item2.svg" alt="" class="character__img" />
+              <p class="character__name">f/5,6</p>
+            </li>
+            <li class="character__elem">
+              <img src="/images/item3.svg" alt="" class="character__img" />
+              <p class="character__name">100</p>
+            </li>
+            <li class="character__elem">
+              <img src="/images/item4.svg" alt="" class="character__img" />
+              <p class="character__name">Sweden</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="leafs">
+        <div class="element__info">
+          <h3 class="element__subtitle">Monstera Leafs</h3>
+          <p class="element__text">
+            Vestibulum sit amet urna turpis. Mauris euismod elit et nisi
+            ultrices, ut faucibus orci tincidunt.
+          </p>
+        </div>
+        <ul class="character">
+          <li class="character__elem">
+            <img src="/images/item1.svg" alt="" class="character__img" />
+            <p class="character__name">1/400s</p>
+          </li>
+          <li class="character__elem">
+            <img src="/images/item2.svg" alt="" class="character__img" />
+            <p class="character__name">f/3,5</p>
+          </li>
+          <li class="character__elem">
+            <img src="/images/item3.svg" alt="" class="character__img" />
+            <p class="character__name">100</p>
+          </li>
+          <li class="character__elem">
+            <img src="/images/item4.svg" alt="" class="character__img" />
+            <p class="character__name">Costa Rica</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="section-clients" class="clients">
+        <div class="container">
+          <h2 class="section__title">Past clients</h2>
+          <p class="section__subtitle">Trusted by your favourite companies</p>
+          <div class="past-clients">
+            <img
+              class="past-clients__img"
+              src="/images/hillplayes.svg"
+              alt="hill"
+            />
+            <img
+              class="past-clients__img"
+              src="/images/riksgransen.svg"
+              alt="riks"
+            />
+            <img
+              class="past-clients__img"
+              src="/images/studio-cai.svg"
+              alt="cai"
+            />
+            <img
+              class="past-clients__img img-4"
+              src="/images/chill.svg"
+              alt="chill"
+            />
+            <img
+              class="past-clients__img img-5"
+              src="/images/stockholm.svg"
+              alt="stockholm"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="starfall">
+        <div class="element__info">
+          <h3 class="element__subtitle">Star fall in the Himalayas</h3>
+          <p class="element__text">
+            Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex,
+            condimentum dapibus congue et, vulputate ut ligula.
+          </p>
+        </div>
+        <ul class="character">
+          <li class="character__elem">
+            <img src="/images/item1.svg" alt="" class="character__img" />
+            <p class="character__name">6''</p>
+          </li>
+          <li class="character__elem">
+            <img src="/images/item2.svg" alt="" class="character__img" />
+            <p class="character__name">f/11</p>
+          </li>
+          <li class="character__elem">
+            <img src="/images/item3.svg" alt="" class="character__img" />
+            <p class="character__name">800</p>
+          </li>
+          <li class="character__elem">
+            <img src="/images/item4.svg" alt="" class="character__img" />
+            <p class="character__name">Nepal</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="help">
+        <div class="container">
+          <h2 class="section__title">
+            Need help with photography or videography?
+          </h2>
+          <p class="section__subtitle">We're here for you!</p>
+          <a href="#" class="product__link product__link-help open-popup"
+            >Get in touch</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__left">
+            <a href="#" class="logo">
+              <img src="/images/logo.svg" alt="logo" />
+            </a>
+            <p class="footer__info">
+              Photographers & videographers capturing the world around us.
+            </p>
+          </div>
+
+          <nav class="footer__menu footer__menu-left">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <p class="footer__menu-title">Business areas</p>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Product Photography</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link"
+                  >Architecture Photography</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Drone Photography</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Wildlife Photography</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer__menu footer__menu-right">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <p class="footer__menu-title">Pages</p>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Gear cage</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Featured images</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Contact</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Style guide</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Instructions</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Changelog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="subscription">
+          <div class="subscription__info">
+            <div class="subscription__title">Subscribe to our newsletter</div>
+            <p class="subscription__subtitle">
+              Read about all the things we do.
+            </p>
+          </div>
+          <form class="footer__form">
+            <input
+              class="footer__form-input"
+              id="mail"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button class="footer__btn" type="submit">Send</button>
+          </form>
+        </div>
+
+        <div id="section-contact" class="footer__bottom">
+          <div class="footer__bottom-author">
+            <p class="footer__info">
+              © Aperture Photography, Inc. All rights reserved.
+            </p>
+            <a href="#" class="footer__licensing">Licensing</a>
+          </div>
+
+          <ul class="footer__social">
+            <li class="footer__social-icon">
+              <a href="#" class="footer__social-link"
+                ><img src="/images/twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li class="footer__social-icon">
+              <a href="#" class="footer__social-link"
+                ><img src="/images/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li class="footer__social-icon">
+              <a href="#" class="footer__social-link"
+                ><img src="/images/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="btnUp">▲</div>
+    <script src="/js/popup.js"></script>
+    <script src="/js/btnUp.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
