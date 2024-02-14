@@ -25,3 +25,9 @@
 ## [Project page on GitHubPages](https://ekaterinatet.github.io/photo-website/)
 
 ## [Layout in Figma](https://www.figma.com/file/KCCKHt0Vr5F4dGb0gmnwhb/Aperture-%2B?type=design&node-id=0-1&t=kTBXK9DDKdQRY2Be-0)
+
+<p align="center" display="flex" flexDirection="row">
+  <img width="200" height="800" src="https://github.com/EkaterinaTet/photo-website/blob/main/photo-website.png">
+   <img width="300" height="400" src="https://github.com/EkaterinaTet/photo-website/blob/main/gallery.png">
+   <img width="300" height="400" src="https://github.com/EkaterinaTet/photo-website/blob/main/tools.png">
+</p>
